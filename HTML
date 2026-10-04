@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TechPro</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <div class="logo">
+      TECH<span>PRO</span>
+    </div>
+
+    <div class="status">
+      <span></span>
+      ONLINE
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <section class="hero">
+
+      <p class="eyebrow">WELCOME TO TECHPRO</p>
+
+      <h1>
+        Technology<br>
+        <span>Made Simple.</span>
+      </h1>
+
+      <p class="description">
+        Shop technology, check the latest updates,
+        explore markets, and use Assasson Pro.
+      </p>
+
+      <button class="ai-button" onclick="openAI()">
+        🤖 TURN ASSASSON PRO ON
+      </button>
+
+    </section>
+
+
+    <section class="services">
+
+      <button class="service" onclick="openShop()">
+
+        <div class="service-icon">🛒</div>
+
+        <div>
+          <h2>TechPro Shop</h2>
+          <p>Browse technology and products.</p>
+        </div>
+
+        <strong>→</strong>
+
+      </button>
+
+
+      <button class="service" onclick="openStocks()">
+
+        <div class="service-icon">📈</div>
+
+        <div>
+          <h2>Stocks</h2>
+          <p>Check market information.</p>
+        </div>
+
+        <strong>→</strong>
+
+      </button>
+
+
+      <button class="service" onclick="openUpdates()">
+
+        <div class="service-icon">📰</div>
+
+        <div>
+          <h2>Latest Updates</h2>
+          <p>Technology news and updates.</p>
+        </div>
+
+        <strong>→</strong>
+
+      </button>
+
+    </section>
+
+
+    <section id="aiPanel" class="ai-panel">
+
+      <div class="ai-header">
+        <div class="ai-logo">🤖</div>
+
+        <div>
+          <h2>Assasson Pro</h2>
+          <p>AI Assistant</p>
+        </div>
+      </div>
+
+      <div class="ai-status">
+        ASSASSON PRO IS READY
+      </div>
+
+      <div class="chat-box">
+
+        <div id="aiMessage">
+          Turn Assasson Pro on to start.
+        </div>
+
+      </div>
+
+      <div class="chat-input">
+
+        <input
+          id="question"
+          type="text"
+          placeholder="Ask Assasson Pro..."
+        >
+
+        <button onclick="askAI()">➤</button>
+
+      </div>
+
+    </section>
+
+
+    <section class="featured">
+
+      <p>TECHPRO</p>
+
+      <h2>
+        One place for<br>
+        your technology.
+      </h2>
+
+      <button onclick="notify('More TechPro features coming soon!')">
+        Explore TechPro →
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    TECHPRO © 2026
+  </footer>
+
+
+  <div id="toast"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
